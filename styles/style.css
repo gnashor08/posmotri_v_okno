@@ -101,6 +101,7 @@ ol {
   width: 194px;
   height: 100%;
   object-position: center;
+  object-fit: cover;
 }
 
 .content__video-card-description-container {
@@ -144,7 +145,6 @@ ol {
 }
 
 .content__video-card-title {
-  display: flex;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
@@ -154,7 +154,9 @@ ol {
   text-align: left;
   max-width: 200px;
   overflow: hidden;
-  gap: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
